@@ -1,7 +1,7 @@
 # A250220_DEVEL
 Temporary development repo for the A250220 board (https://hackaday.io/project/170924)
 
-WARNING! This Release is intended only for development.
+WARNING! This Release is intended for development only.
 
 
 # Current revision: S260320-R260820_DEVEL1
