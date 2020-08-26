@@ -56,7 +56,9 @@ S260320-R180520   Fixed a bug preventig a running program to read the RTC as exp
                   Added support for CP/M 2.2 (8080).
 S260320-R210520   Added extended serial Rx buffer check for XMODEM support.
 S260320-R230520   Added support for CP/M-86.
-S260320-R260820   T.B.D                                           *********************************
+S260320-R260820   Disk set 2 support;
+                  Serial Rx IRQ support;
+                  Systick (100ms) support.                                           *********************************
 
 
 ---------------------------------------------------------------------------------
@@ -183,6 +185,7 @@ PetitFS licence:
 #define   AUTO80FN          "AU80BOOT.BIN"      // User executable binary file (8080 machine code)
 #define   CPMFN             "CPM22.BIN"         // CP/M 2.2 (8080)
 #define   CPM86FN           "CPM86.BIN"         // It is the CPM.SYS file without the first 128 bytes (header)
+#define   MSDOSFN           "MSDOS.BIN"         // MSDOS boot file                                              ********************** NEW
 #define   V20DISK           "DSxNyy.DSK"        // Generic V20 disk name (from DS0N00.DSK to DS9N99.DSK)
 #define   DS_OSNAME         "DSxNAM.DAT"        // File with the OS name for Disk Set "x" (from DS0NAM.DAT to DS9NAM.DAT)
 #define   SEG_8080CODE      0x0FF0              // Segment used for 8080 code
@@ -194,6 +197,9 @@ PetitFS licence:
 #define   CPM86STRADDR      0x0400              // Load Starting address for CP/M-86
 #define   CPM86JMPADDR      0x2500              // Address (offset) of CP/M-86 for the first instr. to execute
 #define   CPM86JMPSEG       0x0040              // Segment of CP/M-86 for the first instr. to execute
+#define   MSDOSSTRADDR      0x0000              // Load Starting address for MSDOS                            ********************** NEW (TO BE SET)
+#define   MSDOSJMPADDR      0x0000              // Address (offset) of MSDOS for the first instr. to execute  ********************** NEW (TO BE SET)
+#define   MSDOSJMPSEG       0x0000              // Segment of MSDOS for the first instr. to execute           ********************** NEW (TO BE SET)
 
 // ------------------------------------------------------------------------------
 //
@@ -261,7 +267,7 @@ const String  compTimeStr  = __TIME__;    // Compile timestamp string
 const String  compDateStr  = __DATE__;    // Compile datestamp string
 const byte    debug        = 0;           // Debug off = 0, low = 1, high = 2
 const byte    daysOfMonth[] = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
-const byte    maxDiskSet   = 2;           // Number of configured Disk Sets
+const byte    maxDiskSet   = 3;           // Number of configured Disk Sets                                   *************** ADDED DISK SET 2
 const byte    bootModeAddr = 10;          // Internal EEPROM address for boot mode storage
 const byte    autoexecFlagAddr  = 12;     // Internal EEPROM address for AUTOEXEC flag storage
 const byte    clockModeAddr     = 13;     // Internal EEPROM address for the V20 clock high/low speed switch
@@ -687,9 +693,21 @@ void setup()
       //
         fileNameSD = CPM86FN;
         JumpStrAddr = CPM86JMPADDR;             // Starting addres of the fisrt instruction to execute ("far" jump)
-        V20initJumpSegm = CPM86JMPSEG;          // Segment used for the isrt instruction to execute ("far" jump)
+        V20initJumpSegm = CPM86JMPSEG;          // Segment used for the fisrt instruction to execute ("far" jump)
         BootStrAddr = CPM86STRADDR;             // Starting address where start to load the code 
       break;
+
+      // ********************************************************************************************************** NEW
+      case 2:                                   // MS-DOS
+      //
+      //
+        fileNameSD = MSDOSFN;
+        JumpStrAddr = MSDOSJMPADDR;             // Starting addres of the fisrt instruction to execute ("far" jump)
+        V20initJumpSegm = MSDOSJMPSEG;          // Segment used for the fisrt instruction to execute ("far" jump)
+        BootStrAddr = MSDOSSTRADDR;             // Starting address where start to load the code 
+      break;
+      // ********************************************************************************************************** END
+      
       }
     break;
   }
