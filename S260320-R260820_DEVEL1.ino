@@ -185,7 +185,7 @@ PetitFS licence:
 #define   AUTO80FN          "AU80BOOT.BIN"      // User executable binary file (8080 machine code)
 #define   CPMFN             "CPM22.BIN"         // CP/M 2.2 (8080)
 #define   CPM86FN           "CPM86.BIN"         // It is the CPM.SYS file without the first 128 bytes (header)
-#define   MSDOSFN           "MSDOS.BIN"         // MSDOS boot file                                              ********************** NEW
+#define   MSDOSFN           "MSDOS.BIN"         // MSDOS boot file                                              ********************** NEW (MAY BE CHANGED)
 #define   V20DISK           "DSxNyy.DSK"        // Generic V20 disk name (from DS0N00.DSK to DS9N99.DSK)
 #define   DS_OSNAME         "DSxNAM.DAT"        // File with the OS name for Disk Set "x" (from DS0NAM.DAT to DS9NAM.DAT)
 #define   SEG_8080CODE      0x0FF0              // Segment used for 8080 code
@@ -212,8 +212,8 @@ PetitFS licence:
 #define   MOV_DS_AX_OPCODE      0x8ED8
 #define   MOV_MEM_IMM_OPCODE    0xC606
 #define   JMPF_OPCODE           0xEA
-#define   SERIALRXIRQ_VECTOR    33              // Set the IRQ vector for the Serial Rx event   ********************* NEW
-#define   SYSTICKIRQ_VECTOR     34              // Set the IRQ vector for the Sysytick event    ********************* NEW
+#define   SERIALRXIRQ_VECTOR    33              // Set the IRQ vector for the Serial Rx event   ********************* NEW (MAY BE CHANGED)
+#define   SYSTICKIRQ_VECTOR     34              // Set the IRQ vector for the Sysytick event    ********************* NEW (MAY BE CHANGED)
 
 // ------------------------------------------------------------------------------
 //
