@@ -1,5 +1,5 @@
 # A250220_DEVEL
-Development repo for the A250220 board (https://hackaday.io/project/170924)
+Temporary development repo for the A250220 board (https://hackaday.io/project/170924)
 
 WARNING! This Release is intended only for development.
 
