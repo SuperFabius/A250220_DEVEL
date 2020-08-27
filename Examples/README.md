@@ -1,9 +1,9 @@
 
 In this folder there are two source (assembler) examples using IRQ:
 
-testEchoIRQ.asm:      uses IRQ vector 33 to read a char from the virtial serial port
+**testEchoIRQ.asm:**      uses IRQ vector 33 to read a char from the virtual serial port
 
-testEchoBlinkIRQ.asm: uses IRQ vector 33 to read a char from the virtial serial port and IRQ vector 34 for the system tick tiner (100ms) to blink the User led.
+**testEchoBlinkIRQ.asm:** uses IRQ vector 33 to read a char from the virtial serial port and IRQ vector 34 for the system tick tiner (100ms) to blink the User led.
 
 The executable .HEX files (Intel-Hex) are provided too.
 
