@@ -1,5 +1,5 @@
 
-In this filder there are two source (assembker) examples using IRQ.
+In this folder there are two source (assembler) examples using IRQ:
 
 testEchoIRQ.asm:      uses IRQ vector 33 to read a char from the virtial serial port
 
