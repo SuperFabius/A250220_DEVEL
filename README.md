@@ -1,7 +1,7 @@
 # A250220_DEVEL
 Temporary development repo for the A250220 board (https://hackaday.io/project/170924)
 
-**Current IOS revision: S260320-R260820_DEVEL1**
+**Development IOS revision: S260320-R260820_DEVEL1**
 
 WARNING! This Release is intended for development only.
 
