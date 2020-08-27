@@ -9,4 +9,4 @@ The executable .HEX files (Intel-Hex) are provided too.
 
 NOTE 1: testEchoBlinkIRQ.asm requires the IOS **S260320-R260820_DEVEL1** to blink the led.
 
-NOTE 2: both examples can run with IOS **S260320-R230520** but the led will not blink in the testEchoBlinkIRQ.asm example
+NOTE 2: both examples can run with IOS **S260320-R230520** too, but the led will not blink in the testEchoBlinkIRQ.asm example
