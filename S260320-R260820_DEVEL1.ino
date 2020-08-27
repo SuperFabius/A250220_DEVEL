@@ -56,9 +56,8 @@ S260320-R180520   Fixed a bug preventig a running program to read the RTC as exp
                   Added support for CP/M 2.2 (8080).
 S260320-R210520   Added extended serial Rx buffer check for XMODEM support.
 S260320-R230520   Added support for CP/M-86.
-S260320-R260820   Disk set 2 support;
-                  Serial Rx IRQ support;
-                  Systick (100ms) support.                                           *********************************
+S260320-R260820   Added Disk set 2 support;
+                  Added Systick (100ms) support (see SET IRQ opcode).      *********************************
 
 
 ---------------------------------------------------------------------------------
@@ -2016,7 +2015,7 @@ void execWriteOpcode()
       //                              x  x  x  x  x  x  0  x    Systick IRQ off
       //                              x  x  x  x  x  x  1  x    Systick IRQ on
       //
-      // NOTE: The default value after a reset/power on is 0 (all IRQ disabled)
+      // NOTE 1: The default value after a reset/power on is 0 (all IRQ disabled).
       // NOTE 2: Currently the events that can set the V20 INTR signal are "Serial Rx" (a char is present 
       //         on the read buffer) and "Systick" (system tick timer).
 
