@@ -151,9 +151,13 @@ puts_end:
 ; =========================================================================== ;
 putc:
     mov     al, SERTX_OPC   ; AL = SERIAL TX opcode
+	;
+	cli						; WARNING! The opcode must be an atomic event
     out     STO_OPCD, al    ; Write the opcode
     mov     al, ah
     out     EXC_WR_OPCD, al ; Print char in AL
+	sti
+	;
     ret
     
 rxchar      db  0
