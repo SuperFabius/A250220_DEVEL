@@ -18,7 +18,7 @@ In this folder there are the needed files to try the MS-DOS v2.11 porting by Kev
 ![](Screenshot.png)
 
 ### Note 1: 
-The DS2N00.DSK and MSDOS.BIN files are just the current DS0N00.DSK and AUTOBOOT.BIN renamed files taken from https://github.com/keyvin/v20mbc-msdos. The DS2NAM.DAT file is just needed to correctly display the OS name when changing the Disk Set in the Sytem Boot menu of the V20-MBC
+The DS2N00.DSK and MSDOS.BIN files are just the current DS0N00.DSK and AUTOBOOT.BIN renamed files taken from https://github.com/keyvin/v20mbc-msdos/tree/main/rdy2run. The DS2NAM.DAT file is just needed to correctly display the OS name when changing the Disk Set in the Sytem Boot menu of the V20-MBC
 
 ### Note 2: 
 I've uploaded here also the binary file **S260320-R260820_DEVEL1.ino.with_bootloader_atmega32_16000000L.hex** ready to be flashed on the Atmega32 (Fuse bits: High Byte 0xD6, Low Byte 0xAF, Lock Byte 0xCF)
