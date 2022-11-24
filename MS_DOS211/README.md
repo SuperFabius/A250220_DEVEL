@@ -11,12 +11,12 @@ In this folder there are the current files to try the MS-DOS v2.11 porting by Ke
 
 Copy **DS2N00.DSK**, **MSDOS.BIN** and **DS2NAM.DAT** on the root of your SD, then reboot the V20-MBC changing the current Disk Set to MS-DOS with the usual way (RESET + USER buttons pressed).
 
-**This only works if you have already uploded the S260320-R260820_DEVEL1 IOS on the Atmega32**
+**This only works if you have already uploded the S260320-R260820_DEVEL1 IOS on the Atmega32!**
 
 ![](Screenshot.png)
 
 ### Note 1: 
 The DS2N00.DSK and MSDOS.BIN files are just the current DS0N00.DSK and AUTOBOOT.BIN renamed files taken from https://github.com/keyvin/v20mbc-msdos. The DS2NAM.DAT file is just needed to correctly display the OS name when changing the Disk Set in the Sytem Boot menu of the V20-MBC
 
-### Note : 
+### Note 2: 
 I've uploaded here also the binary file **S260320-R260820_DEVEL1.ino.with_bootloader_atmega32_16000000L.hex** ready to be flahed on the Atmega32
