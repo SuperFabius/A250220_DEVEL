@@ -9,7 +9,7 @@ In this folder there are the current files to try the MS-DOS v2.11 porting by Ke
 
 ### HOW TO DO: 
 
-**1:** Upload the IOS on the Atmega32 with this one (S260320-R260820_DEVEL1);
+**1:** Upload the IOS on the Atmega32 with this one: **S260320-R260820_DEVEL1** (on the parent folder);
 
 **2:** Copy **DS2N00.DSK**, **MSDOS.BIN** and **DS2NAM.DAT** (from here) on the root of your SD, then reboot the V20-MBC changing the current Disk Set to MS-DOS with the usual way (RESET + USER buttons pressed).
 
