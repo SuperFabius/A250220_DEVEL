@@ -5,7 +5,7 @@ Thanks to **Kevin Price** now MS-DOS 2.11 is running on the V20-MBC!
 
 See: https://github.com/keyvin/v20mbc-msdos
 
-In this folder there are the current files to try the MS-DOS v2.11 porting by Kevin on the V20-MBC.
+In this folder there are the needed files to try the MS-DOS v2.11 porting by Kevin on the V20-MBC.
 
 ### HOW TO DO: 
 
