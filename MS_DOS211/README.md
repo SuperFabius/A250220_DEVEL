@@ -9,3 +9,4 @@ Copy DS2N00.DSK and DS2NAM.DAT on the root of your SD, and change the current Di
 
 This only works if you have alredy uploded the S260320-R260820_DEVEL1 IOS
 
+Note: the DS2N00.DSK and MSDOS.BIN files are just the current DS0N00.DSK and AUTOBOOT.BIN renamed files taken from https://github.com/keyvin/v20mbc-msdos
