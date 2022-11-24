@@ -15,5 +15,8 @@ Copy **DS2N00.DSK**, **MSDOS.BIN** and **DS2NAM.DAT** on the root of your SD, th
 
 ![](Screenshot.png)
 
-### Note: 
+### Note 1: 
 The DS2N00.DSK and MSDOS.BIN files are just the current DS0N00.DSK and AUTOBOOT.BIN renamed files taken from https://github.com/keyvin/v20mbc-msdos. The DS2NAM.DAT file is just needed to correctly display the OS name when changing the Disk Set in the Sytem Boot menu of the V20-MBC
+
+### Note : 
+I've uploaded here also the binary file **S260320-R260820_DEVEL1.ino.with_bootloader_atmega32_16000000L.hex** ready to be flahed on the Atmega32
