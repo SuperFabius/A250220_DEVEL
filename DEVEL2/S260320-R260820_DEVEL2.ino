@@ -39,7 +39,7 @@ Notes:
 IMPORTANT NOTE:
 
 The "Virtual I/O engine" is tuned to work at CPU clock frequencies not less than 4MHz. 
-Do  not attempt to use a CPU clock less than 4MHz.
+Do not attempt to use a CPU clock less than 4MHz.
 To use a CPU clock less than 4MHz the "Virtual I/O engine" requires a new tune-up.
 
 
