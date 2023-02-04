@@ -22,7 +22,7 @@ Notes:
 
 1: Supported CMOS CPU: uPD70108H (V20HL), 80C88
 
-3: Supported reset at boot time for uTerm (A071218-R250119) 
+3: Supported reset at boot time for uTerm (A071218-R290319) 
 
 2: Tested on Atmega32A @ Arduino IDE 1.8.19
 
@@ -455,10 +455,10 @@ void setup()
   digitalWrite(RDYRES_, HIGH);                  // Set RDYRES_ NOT ACTIVE
   storeOneByte(0x00, 0x0000);
 
-  // Initialize MCU_RTS and MCU_CTS and reset uTerm (A071218-R250119) if present
+  // Initialize MCU_RTS and MCU_CTS and reset uTerm if present
   pinMode(MCU_CTS_, INPUT_PULLUP);              // MCU_CTS_ parked (not used)
   pinMode(MCU_RTS_, OUTPUT);
-  digitalWrite(MCU_RTS_, LOW);                  // Reset uTerm (A071218-R250119)
+  digitalWrite(MCU_RTS_, LOW);                  // Reset uTerm
   delay(100); 
   digitalWrite(MCU_RTS_, HIGH); 
   delay(500);                                   // Give the time to exit from reset
