@@ -1,4 +1,4 @@
-# A250220_DEVEL
+# S260320-R260820_DEVEL1
 Temporary development repo for the A250220 board (https://hackaday.io/project/170924)
 
 **Development IOS Revision: S260320-R260820_DEVEL1** (see the Changelog inside the .ino file)
