@@ -3,7 +3,7 @@ Temporary development repo for the A250220 board (https://hackaday.io/project/17
 
 **Development IOS Revisions:**
 
-**DEVEL1 folder: S260320-R260820_DEVEL1** (adds serial RX and Sysytick IRQ)
+**DEVEL1 folder: S260320-R260820_DEVEL1** (adds serial RX and Systick IRQ)
 
 **DEVEL2 folder: S260320-R260820_DEVEL2** (adds MSDOS support)
 
