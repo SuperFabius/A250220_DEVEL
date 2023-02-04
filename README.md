@@ -7,4 +7,4 @@ Temporary development repo for the A250220 board (https://hackaday.io/project/17
 
 **SDEVEL2 folder: 260320-R260820_DEVEL2** (adds MSDOS support)
 
-WARNING! This Revision is intended for development only.
+WARNING! These Revisions are intended for development only.
