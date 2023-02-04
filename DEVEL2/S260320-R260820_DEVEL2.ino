@@ -60,8 +60,8 @@ S260320-R260820_DEVEL1
                   Added Disk set 2 support (MSDOS);
                   Added Systick IRQ (100ms) and Rx IRQ support (new SET IRQ 0x02 opcode).      *********************************
 S260320-R260820_DEVEL2
-                  Chaged the IRQ vector for the Serial Rx event to 0x40 for MSDOS compatibility;
-                  Chaged the IRQ vector for the Sysytick event to 0x41 for MSDOS compatibility;
+                  Chaged the IRQ vector for the Serial Rx event to 0x40 for MSDOS compatibility; *************************
+                  Chaged the IRQ vector for the Systick event to 0x41 for MSDOS compatibility;
                   Added support for MSDOS timestamp (new MSDOS_RTC 0x90 opcode).
 
 
